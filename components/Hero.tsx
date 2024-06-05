@@ -3,7 +3,18 @@ import React from 'react';
 
 function Hero() {
   return (
-    <Flex direction="column" align="center" justify="center" height="100vh" width="70vw" p="0 20px" textAlign="center">
+    <Flex
+      direction="column"
+      align="center"
+      justify="center"
+      height="100vh"
+      width="70vw"
+      p="0 20px"
+      mt={{
+        base: '50px',
+        md: '0',
+      }}
+      textAlign="center">
       <Heading size="4xl" as="h1">
         We Help Legal Innovators Move Money
       </Heading>

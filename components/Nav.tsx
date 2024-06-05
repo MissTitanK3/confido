@@ -51,6 +51,7 @@ export default function Nav() {
         width: '100%',
         top: 0,
         left: 0,
+        marginBottom: '1.45rem',
       }}>
       <Flex
         h={16}
