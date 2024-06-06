@@ -61,4 +61,4 @@ Given the short timeframe, some of the current features on the corporate site ma
 - **typescript**: The TypeScript language, which adds static types to JavaScript, enabling better tooling and safer code.
 
 ## Conclusion
-I am excited to bring these improvements to the corporate site and demonstrate my continued growth as a web developer. This project not only aims to enhance the website's functionality and aesthetics but also serves as a testament to my dedication to staying current with industry trends and delivering high-quality digital solutions.
+I am excited to bring these improvements to the corporate site and demonstrate my continued growth as a software engineer. This project not only aims to enhance the website's functionality and aesthetics but also serves as a testament to my dedication to staying current with industry trends and delivering high-quality digital solutions.
