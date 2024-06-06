@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import FooterLogo from '@/public/images/Confido_footer_logo_icon.webp';
 import Image from 'next/image';
@@ -28,13 +30,13 @@ function Footer({}: Props) {
           </Flex>
           <Flex justify="space-evenly" textAlign="center" mt={2}>
             <Link className="spec-link-social" href="#">
-              <Icon as={FaXTwitter} />
+              <FaXTwitter />
             </Link>
             <Link className="spec-link-social" href="#">
-              <Icon as={FaLinkedin} />
+              <FaLinkedin />
             </Link>
             <Link className="spec-link-social" href="#">
-              <Icon as={FaYoutube} />
+              <FaYoutube />
             </Link>
           </Flex>
         </Flex>

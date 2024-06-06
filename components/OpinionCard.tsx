@@ -17,9 +17,8 @@ function OpinionCard({ image, imageAlt, opinion, name, title }: Props) {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      mb="3rem"
       mx={10}
-      p={10}
+      p={1}
       bg="#0F1F33"
       color="whitesmoke"
       w="340px"

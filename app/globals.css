@@ -56,3 +56,11 @@ a {
 .spec-link-social:hover {
   filter: grayscale(80%);
 }
+
+.remove-link {
+  background-color: none;
+}
+
+.remove-link:hover {
+  background-color: none;
+}

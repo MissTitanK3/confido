@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './page.module.css';
-import { Box, Button, Flex, Heading, Text, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import { Button, Flex, Heading, Text, useColorMode } from '@chakra-ui/react';
 import HelpCard from '@/components/HelpCard';
 import AdminIcon from '@/public/images/admin-work.webp';
 import ClientExp from '@/public/images/client-experience.webp';
@@ -9,7 +9,6 @@ import Collections from '@/public/images/collections.webp';
 import ReducedCost from '@/public/images/reduce-cost.webp';
 import ReduceRisk from '@/public/images/reduce-risk.webp';
 import Hero from '@/components/Hero';
-import Image from 'next/image';
 import Lawcus from '@/public/images/Lawcus-Logo.webp';
 import LeanLaw from '@/public/images/partner-leanlaw.webp';
 import Litify from '@/public/svg/litify.svg';
@@ -19,10 +18,12 @@ import { useEffect } from 'react';
 import AnnMarie from '@/public/images/Ann_Marie.webp';
 import Jacqueline from '@/public/images/Jacqueline_Horani.webp';
 import Judie from '@/public/images/Judie_Saunders.jpg';
-import ScrollableGallery, { Opinion } from '@/components/ScrollGallery';
+import { Opinion } from '@/components/ScrollGallery';
 import GrayscaleImage from '@/components/GrayScaleImg';
 import VideoPlayer from '@/components/VideoPlayer';
 import Footer from '@/components/Footer';
+import GetStartedToday from '@/components/GetStartedToday';
+import WhatClientsSay from '@/components/WhatClientsSay';
 
 const opinions: Opinion[] = [
   {
@@ -157,27 +158,8 @@ export default function Home() {
         <Text mb="1rem">No monthly, setup or termination fees. Get started today.</Text>
         <Button>Sign Up</Button>
       </Flex>
-      <Heading sx={{ margin: '5rem auto 0 auto', textAlign: 'center' }} as="h2">
-        What Our Clients Are Saying
-      </Heading>
-      <ScrollableGallery opinions={opinions} />
-      <Flex
-        width="100%"
-        direction="column"
-        justify="center"
-        align="center"
-        mb="5rem"
-        bg="#0F1F33"
-        p="2rem"
-        color="whitesmoke">
-        <Heading as="h2" m="1rem auto" textAlign="center">
-          Get Started Today
-        </Heading>
-        <Text mb="1rem">
-          Let us help you reduce the cost and improve the client experience associated with accepting payments.
-        </Text>
-        <Button>Schedule a Demo</Button>
-      </Flex>
+      <WhatClientsSay />
+      <GetStartedToday />
       <Footer />
     </main>
   );

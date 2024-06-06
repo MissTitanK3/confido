@@ -12,6 +12,7 @@ function VideoPlayer({ videoSrc, videoUUID }: Props) {
     <Flex width="1080px" justify="center" align="center" mb="5rem">
       <Box width={{ base: '30%', sm: '50%', md: '75%', lg: '80%', xl: '100%' }} height="auto" position="relative">
         <Image
+          unoptimized
           layout="responsive"
           width={500}
           height={500}

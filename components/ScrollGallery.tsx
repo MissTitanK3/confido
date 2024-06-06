@@ -1,3 +1,5 @@
+'use client';
+
 import { Box, Flex, IconButton, useBreakpointValue } from '@chakra-ui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import { useRef } from 'react';
@@ -43,7 +45,7 @@ const ScrollableGallery: React.FC<ScrollableGalleryProps> = ({ opinions }) => {
     <Box position="relative" overflow="hidden" maxW={{ base: 'full', lg: '1000px' }} mx="auto">
       <Flex ref={containerRef} overflowX="scroll" className="hide-scrollbar" scrollBehavior="smooth" width="full">
         {opinions.map((opinion) => (
-          <Box key={opinion.id} display="inline-block" width={400} flex="0 0 auto" px={10} my={10} mx={10}>
+          <Box key={opinion.id} display="inline-block" width={400} flex="0 0 auto" my={10} mx={10}>
             <OpinionCard
               image={opinion.image}
               imageAlt={opinion.imageAlt}
@@ -60,7 +62,7 @@ const ScrollableGallery: React.FC<ScrollableGalleryProps> = ({ opinions }) => {
             aria-label="Scroll left"
             icon={<ChevronLeftIcon />}
             position="absolute"
-            top="50%"
+            top="40%"
             left="0"
             transform="translateY(-50%)"
             onClick={() => scroll('left')}
@@ -69,7 +71,7 @@ const ScrollableGallery: React.FC<ScrollableGalleryProps> = ({ opinions }) => {
             aria-label="Scroll right"
             icon={<ChevronRightIcon />}
             position="absolute"
-            top="50%"
+            top="40%"
             right="0"
             transform="translateY(-50%)"
             onClick={() => scroll('right')}

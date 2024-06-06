@@ -5,7 +5,6 @@ import {
   Box,
   Flex,
   Button,
-  useColorModeValue,
   Stack,
   useColorMode,
   IconButton,
@@ -20,21 +19,8 @@ import {
 import { MoonIcon, SunIcon, HamburgerIcon } from '@chakra-ui/icons';
 import Logo from '@/public/images/Confido.webp';
 import Image from 'next/image';
+import { NavLink } from './NavLink';
 import Link from 'next/link';
-
-const NavLink = ({ children, nav }: { children: ReactNode; nav: string }) => (
-  <Link href={nav}>
-    <Box
-      padding="1rem 1.5rem"
-      borderRadius="md"
-      textDecoration="none"
-      _hover={{
-        backgroundColor: useColorModeValue('gray.200', 'gray.700'),
-      }}>
-      {children}
-    </Box>
-  </Link>
-);
 
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
