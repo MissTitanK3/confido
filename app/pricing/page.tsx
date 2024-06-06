@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer';
 import GetStartedToday from '@/components/GetStartedToday';
-import PricingBox from '@/components/PricingBox';
+import PricingBox from '@/components/pricing/PricingBox';
 import WhatClientsSay from '@/components/WhatClientsSay';
 import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
 import Link from 'next/link';
@@ -10,10 +10,10 @@ type Props = {};
 
 function Pricing({}: Props) {
   return (
-    <Box>
-      <Flex width="100%" height="90dvh" justifyContent="center" direction="column" align="center">
+    <Box mt={{ base: '12rem', md: '0' }}>
+      <Flex width="100%" height="90vh" justifyContent="center" direction="column" align="center">
         <Heading as="h2">Pricing</Heading>
-        <Flex my="5rem">
+        <Flex my="5rem" direction="row" maxW="1200px" flexWrap="wrap" justifyContent="center">
           <PricingBox
             percentage={1}
             boldText="Same-Day Bank Transfers"
