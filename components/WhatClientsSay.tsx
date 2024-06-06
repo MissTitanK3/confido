@@ -1,9 +1,9 @@
 import { Heading } from '@chakra-ui/react';
 import React from 'react';
 import ScrollableGallery, { Opinion } from './ScrollGallery';
-import AnnMarie from '@/public/images/Ann_Marie.webp';
-import Jacqueline from '@/public/images/Jacqueline_Horani.webp';
-import Judie from '@/public/images/Judie_Saunders.jpg';
+import AnnMarie from '@/public/images/people/Ann_Marie.webp';
+import Jacqueline from '@/public/images/people/Jacqueline_Horani.webp';
+import Judie from '@/public/images/people/Judie_Saunders.jpg';
 
 const opinions: Opinion[] = [
   {
