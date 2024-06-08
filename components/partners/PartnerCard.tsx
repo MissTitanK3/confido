@@ -2,6 +2,7 @@
 
 import { Button, Divider, Flex, Heading, List, ListItem } from '@chakra-ui/react';
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { FaCheck } from 'react-icons/fa6';
 
@@ -42,13 +43,9 @@ function PartnerCard({
             {companyNameIfNotInLogo}
           </Heading>
         )}
-        <Button
-          maxW={200}
-          onClick={() => {
-            window.location.href = learnMoreLink;
-          }}>
-          Learn More
-        </Button>
+        <Link href={learnMoreLink} passHref>
+          <Button>Learn More</Button>
+        </Link>
       </Flex>
       <List spacing={4} my="3rem">
         {listItems.map((item, index) => (

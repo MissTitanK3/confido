@@ -1,4 +1,5 @@
 import { Button, Flex, Heading, Text } from '@chakra-ui/react';
+import Link from 'next/link';
 import React from 'react';
 
 function Hero() {
@@ -22,7 +23,9 @@ function Hero() {
         Confido Legal is an integrated payment processing platform specifically designed for law firms and legal
         technology companies.
       </Text>
-      <Button>Schedule a Demo</Button>
+      <Link href="/" passHref>
+        <Button>Schedule a Demo</Button>
+      </Link>
     </Flex>
   );
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import { Button, Flex, Heading, Text } from '@chakra-ui/react';
+import Link from 'next/link';
 import React from 'react';
 
 type Props = {
@@ -28,19 +29,13 @@ function GetStartedToday({ viewDocs = false }: Props) {
       )}
 
       {viewDocs ? (
-        <Button
-          onClick={() => {
-            window.location.href = '/confido-legal-documentation';
-          }}>
-          View Documentation
-        </Button>
+        <Link href="/confido-legal-demo-scheduler" passHref>
+          <Button>Discover Options</Button>
+        </Link>
       ) : (
-        <Button
-          onClick={() => {
-            window.location.href = '/confido-legal-demo-scheduler';
-          }}>
-          Schedule a Demo
-        </Button>
+        <Link href="/confido-legal-demo-scheduler" passHref>
+          <Button>Discover Options</Button>
+        </Link>
       )}
     </Flex>
   );

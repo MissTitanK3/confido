@@ -44,7 +44,9 @@ function Pricing({}: Props) {
             </Link>
             .
           </Text>
-          <Button m="15px 0">Schedule A Demo</Button>
+          <Link href="/" passHref>
+            <Button m="15px 0">Schedule A Demo</Button>
+          </Link>
         </Flex>
       </Box>
       <Box maxW="1200" margin="auto">

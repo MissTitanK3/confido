@@ -71,13 +71,12 @@ export default function Nav() {
 
         <Flex alignItems={'center'}>
           <Stack direction={'row'} spacing={7} display={{ base: 'none', lg: 'flex' }}>
-            <Button>Schedule a Demo</Button>
-            <Button
-              onClick={() => {
-                window.open('https://app.confidolegal.com', '_blank');
-              }}>
-              Sign-In
-            </Button>
+            <Link href="/" passHref>
+              <Button>Schedule a Demo</Button>
+            </Link>
+            <Link href="https://app.confidolegal.com" target="_blank" passHref>
+              <Button>Sign-In</Button>
+            </Link>
           </Stack>
           <IconButton
             size="md"
@@ -104,14 +103,12 @@ export default function Nav() {
               <NavLink nav="/solutions">Law Firms</NavLink>
               <NavLink nav="/pricing">Pricing</NavLink>
               <NavLink nav="/contact">Contact</NavLink>
-              <NavLink nav="/about">About</NavLink>
-              <Button>Schedule a Demo</Button>
-              <Button
-                onClick={() => {
-                  window.open('https://app.confidolegal.com', '_blank');
-                }}>
-                Sign-In
-              </Button>
+              <Link href="/" passHref>
+                <Button>Schedule a Demo</Button>
+              </Link>
+              <Link href="https://app.confidolegal.com" target="_blank" passHref>
+                <Button>Sign-In</Button>
+              </Link>
             </Stack>
           </DrawerBody>
         </DrawerContent>

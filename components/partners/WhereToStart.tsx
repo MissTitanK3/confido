@@ -1,6 +1,7 @@
 'use client';
 
-import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
+import { Button, Flex, Heading, Text, Link as ChakraLink } from '@chakra-ui/react';
+import Link from 'next/link';
 import React from 'react';
 
 type Props = {};
@@ -20,12 +21,9 @@ function WhereToStart({}: Props) {
         Not sure where to start?
       </Heading>
       <Text mb="1rem">See what case managment software is right for your firm</Text>
-      <Button
-        onClick={() => {
-          window.location.href = '/confido-legal-demo-scheduler';
-        }}>
-        Discover Options
-      </Button>
+      <Link href="/confido-legal-demo-scheduler" passHref>
+        <Button>Discover Options</Button>
+      </Link>
     </Flex>
   );
 }

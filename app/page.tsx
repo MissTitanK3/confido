@@ -20,6 +20,7 @@ import VideoPlayer from '@/components/VideoPlayer';
 import Footer from '@/components/Footer';
 import GetStartedToday from '@/components/GetStartedToday';
 import WhatClientsSay from '@/components/WhatClientsSay';
+import Link from 'next/link';
 
 export default function Home() {
   const { colorMode } = useColorMode();
@@ -117,7 +118,9 @@ export default function Home() {
           Ready to sign up?
         </Heading>
         <Text mb="1rem">No monthly, setup or termination fees. Get started today.</Text>
-        <Button>Sign Up</Button>
+        <Link href="/" passHref>
+          <Button>Sign Up</Button>
+        </Link>
       </Flex>
       <WhatClientsSay />
       <GetStartedToday />
