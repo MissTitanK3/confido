@@ -4,9 +4,11 @@ import Image, { StaticImageData } from 'next/image';
 type GrayscaleImageProps = {
   src: StaticImageData;
   alt: string;
+  srcHeight?: number;
+  srcWidth?: number;
 };
 
-export default function GrayscaleImage({ src, alt }: GrayscaleImageProps) {
+export default function GrayscaleImage({ src, alt, srcHeight = 120, srcWidth = 120 }: GrayscaleImageProps) {
   return (
     <Box m="1rem">
       <Box
@@ -18,7 +20,7 @@ export default function GrayscaleImage({ src, alt }: GrayscaleImageProps) {
             filter: 'grayscale(0%)',
           },
         }}>
-        <Image src={src} alt={alt} width={120} height={120} />
+        <Image src={src} alt={alt} width={srcWidth} height={srcHeight} />
       </Box>
     </Box>
   );
