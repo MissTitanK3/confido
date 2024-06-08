@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer';
-import GetStartedToday from '@/components/GetStartedToday';
+import GetStartedToday from '@/components/common/GetStartedToday';
 import PricingBox from '@/components/pricing/PricingBox';
-import WhatClientsSay from '@/components/WhatClientsSay';
+import WhatClientsSay from '@/components/common/WhatClientsSay';
 import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';

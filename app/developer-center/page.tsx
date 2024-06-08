@@ -1,7 +1,7 @@
 'use client';
 import Footer from '@/components/Footer';
-import GetStartedToday from '@/components/GetStartedToday';
-import VideoPlayer from '@/components/VideoPlayer';
+import GetStartedToday from '@/components/common/GetStartedToday';
+import VideoPlayer from '@/components/common/VideoPlayer';
 import { Box, Container, Flex, Heading, List, ListItem, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import React, { useEffect } from 'react';
@@ -67,7 +67,7 @@ function DeveloperCenter({}: Props) {
         <Flex align="center" wrap="wrap">
           <WebDevStack />
           <Container>
-            <Heading as="h1" size="2xl">
+            <Heading as="h2" size="2xl">
               Accelerate Growth
             </Heading>
             <Text m="15px 0" fontWeight={500} align="left">
@@ -85,9 +85,9 @@ function DeveloperCenter({}: Props) {
         </Flex>
       </Box>
       <Box maxW="1200" margin="150px auto">
-        <Flex align="center" wrap="wrap">
+        <Flex direction="row" align="center" wrap={{ base: 'wrap', md: 'unset' }}>
           <Flex justify="space-evenly" align="center" direction="column" height={350}>
-            <Heading as="h1" size="2xl">
+            <Heading as="h2" size="2xl">
               Get Started Quickly
             </Heading>
             <Text m="15px 0" fontWeight={500} align="left">
@@ -101,7 +101,7 @@ function DeveloperCenter({}: Props) {
       </Box>
       <Box maxW="1200" margin="100px auto">
         <Flex justifyContent="center" direction="column" textAlign="center" wrap="wrap">
-          <Heading as="h3">Own the Experience</Heading>
+          <Heading as="h2">Own the Experience</Heading>
           <Text m="15px 0" fontWeight={500} align="left">
             Have us help with client support, sales and onboarding or choose to take these functions in-house.
           </Text>
@@ -137,7 +137,7 @@ function DeveloperCenter({}: Props) {
       </Box>
       <Box maxW="1200" margin="100px auto">
         <Flex justifyContent="center" direction="column" align="center">
-          <Heading as="h3">Benefit as We Build</Heading>
+          <Heading as="h2">Benefit as We Build</Heading>
           <Text m="15px 0" fontWeight={500} align="left">
             Our API is designed so that when we add new features and tender types, your clients get immediate access
             without any additional development work on your part. Past examples of these “pre-loaded” features include:

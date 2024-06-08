@@ -5,6 +5,7 @@ import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaCheck } from 'react-icons/fa6';
+import BlueCheckList from '../common/BlueCheckList';
 
 export type PartnerData = {
   companyLogo: StaticImageData;
@@ -47,16 +48,7 @@ function PartnerCard({
           <Button>Learn More</Button>
         </Link>
       </Flex>
-      <List spacing={4} my="3rem">
-        {listItems.map((item, index) => (
-          <ListItem key={index}>
-            <Flex align="center">
-              <FaCheck color="#3585F7" size={24} style={{ marginRight: '1.5rem' }} />
-              {item}
-            </Flex>
-          </ListItem>
-        ))}
-      </List>
+      <BlueCheckList listItems={listItems} />
       <Divider my="3rem" />
     </Flex>
   );

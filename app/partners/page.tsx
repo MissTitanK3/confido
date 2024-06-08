@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer';
-import GetStartedToday from '@/components/GetStartedToday';
+import GetStartedToday from '@/components/common/GetStartedToday';
 import WhereToStart from '@/components/partners/WhereToStart';
-import WhatClientsSay from '@/components/WhatClientsSay';
+import WhatClientsSay from '@/components/common/WhatClientsSay';
 import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
 import LeanLogo from '../../public/images/partners-badges/LeanLawIcon.webp';

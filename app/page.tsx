@@ -2,7 +2,7 @@
 
 import styles from './page.module.css';
 import { Button, Flex, Heading, Text, useColorMode } from '@chakra-ui/react';
-import HelpCard from '@/components/HelpCard';
+import HelpCard from '@/components/common/HelpCard';
 import AdminIcon from '@/public/images/icons/admin-work.webp';
 import ClientExp from '@/public/images/icons/client-experience.webp';
 import Collections from '@/public/images/icons/collections.webp';
@@ -15,11 +15,11 @@ import Litify from '@/public/svg/litify.svg';
 import Matter from '@/public/images/partners-badges/matter365.webp';
 import QuickBooks from '@/public/images/partners-badges/Intuit_QSP_Badge.webp';
 import { useEffect } from 'react';
-import GrayscaleImage from '@/components/GrayScaleImg';
-import VideoPlayer from '@/components/VideoPlayer';
+import GrayscaleImage from '@/components/common/GrayScaleImg';
+import VideoPlayer from '@/components/common/VideoPlayer';
 import Footer from '@/components/Footer';
-import GetStartedToday from '@/components/GetStartedToday';
-import WhatClientsSay from '@/components/WhatClientsSay';
+import GetStartedToday from '@/components/common/GetStartedToday';
+import WhatClientsSay from '@/components/common/WhatClientsSay';
 import Link from 'next/link';
 
 export default function Home() {

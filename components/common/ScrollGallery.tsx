@@ -5,7 +5,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import { useRef } from 'react';
 import OpinionCard from './OpinionCard';
 import { StaticImageData } from 'next/image';
-import '../app/globals.css';
+import '../../app/globals.css';
 
 export interface Opinion {
   id: number;
