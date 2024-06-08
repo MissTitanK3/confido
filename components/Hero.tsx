@@ -23,7 +23,7 @@ function Hero() {
         Confido Legal is an integrated payment processing platform specifically designed for law firms and legal
         technology companies.
       </Text>
-      <Link href="/" passHref>
+      <Link href="/confido-legal-demo-scheduler" passHref>
         <Button>Schedule a Demo</Button>
       </Link>
     </Flex>

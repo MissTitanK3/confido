@@ -34,7 +34,11 @@ function Pricing({}: Props) {
               Concierge onboarding
             </Link>{' '}
             $500 one-time investment (required for firms not integrating through{' '}
-            <Link href="/partners"> one of our partners</Link>). ACH
+            <Link style={{ color: '#4c49e9', textDecoration: 'underline' }} href="/partners">
+              {' '}
+              one of our partners
+            </Link>
+            ). ACH
           </Text>
           <Text m="15px 0">
             *For a list of state surcharging laws, rules and opinions,{' '}
@@ -44,7 +48,7 @@ function Pricing({}: Props) {
             </Link>
             .
           </Text>
-          <Link href="/" passHref>
+          <Link href="/confido-legal-demo-scheduler" passHref>
             <Button m="15px 0">Schedule A Demo</Button>
           </Link>
         </Flex>

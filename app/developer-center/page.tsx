@@ -155,7 +155,7 @@ function DeveloperCenter({}: Props) {
           </Text>
         </Flex>
       </Box>
-      <GetStartedToday />
+      <GetStartedToday viewDocs />
       <Flex justifyContent="center" direction="column" align="center" textAlign="center">
         <VideoPlayer
           videoSrc="https://play.vidyard.com/2cKzStt98aYztWhyhD8F7D.jpg"

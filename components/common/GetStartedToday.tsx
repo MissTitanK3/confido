@@ -29,12 +29,15 @@ function GetStartedToday({ viewDocs = false }: Props) {
       )}
 
       {viewDocs ? (
-        <Link href="/confido-legal-demo-scheduler" passHref>
-          <Button>Discover Options</Button>
+        <Link
+          href="https://docs.confidolegal.com/?hsCtaTracking=ae49054b-5e4c-47e4-831c-1392eb28ad05%7C28c5cb38-3bd3-499a-a1ca-cbd55cd20715"
+          target="_blank"
+          passHref>
+          <Button>View Documentation</Button>
         </Link>
       ) : (
         <Link href="/confido-legal-demo-scheduler" passHref>
-          <Button>Discover Options</Button>
+          <Button>Schedule A Demo</Button>
         </Link>
       )}
     </Flex>

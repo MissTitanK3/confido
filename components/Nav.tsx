@@ -71,7 +71,7 @@ export default function Nav() {
 
         <Flex alignItems={'center'}>
           <Stack direction={'row'} spacing={7} display={{ base: 'none', lg: 'flex' }}>
-            <Link href="/" passHref>
+            <Link href="/confido-legal-demo-scheduler" passHref>
               <Button>Schedule a Demo</Button>
             </Link>
             <Link href="https://app.confidolegal.com" target="_blank" passHref>
@@ -103,7 +103,7 @@ export default function Nav() {
               <NavLink nav="/solutions">Law Firms</NavLink>
               <NavLink nav="/pricing">Pricing</NavLink>
               <NavLink nav="/contact">Contact</NavLink>
-              <Link href="/" passHref>
+              <Link href="/confido-legal-demo-scheduler" passHref>
                 <Button>Schedule a Demo</Button>
               </Link>
               <Link href="https://app.confidolegal.com" target="_blank" passHref>

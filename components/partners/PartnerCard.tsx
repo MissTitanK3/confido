@@ -8,7 +8,7 @@ import { FaCheck } from 'react-icons/fa6';
 import BlueCheckList from '../common/BlueCheckList';
 
 export type PartnerData = {
-  companyLogo: StaticImageData;
+  companyLogo?: StaticImageData;
   companyNameIfNotInLogo?: string;
   learnMoreLink: string;
   listItems: string[];
@@ -38,7 +38,7 @@ function PartnerCard({
       mx="auto"
       mb="5rem">
       <Flex align="center" justify="space-between" mb="1rem">
-        <Image src={companyLogo} alt={logoAlt} width={logoWidth} height={logoHeight} />
+        {companyLogo && <Image src={companyLogo} alt={logoAlt} width={logoWidth} height={logoHeight} />}
         {companyNameIfNotInLogo && (
           <Heading ml="50px" as="h4">
             {companyNameIfNotInLogo}

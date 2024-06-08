@@ -118,7 +118,7 @@ export default function Home() {
           Ready to sign up?
         </Heading>
         <Text mb="1rem">No monthly, setup or termination fees. Get started today.</Text>
-        <Link href="/" passHref>
+        <Link href="https://app.gravity-legal.com/signup" target="_blank" passHref>
           <Button>Sign Up</Button>
         </Link>
       </Flex>

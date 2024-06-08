@@ -44,7 +44,7 @@ function LawFirms({}: Props) {
           <Heading as="h4" size="lg" textAlign="center" my="5">
             Confido Legal is a payment processing and disbursement platform for the next generation of law firms.
           </Heading>
-          <Link href="/" passHref>
+          <Link href="/confido-legal-demo-scheduler" passHref>
             <Button>Schedule a Demo</Button>
           </Link>
         </Flex>
