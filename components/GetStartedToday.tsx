@@ -3,9 +3,11 @@
 import { Button, Flex, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
 
-type Props = {};
+type Props = {
+  viewDocs?: boolean;
+};
 
-function GetStartedToday({}: Props) {
+function GetStartedToday({ viewDocs = false }: Props) {
   return (
     <Flex
       width="100%"
@@ -19,15 +21,27 @@ function GetStartedToday({}: Props) {
       <Heading as="h2" m="1rem auto" textAlign="center">
         Get Started Today
       </Heading>
-      <Text mb="1rem">
-        Let us help you reduce the cost and improve the client experience associated with accepting payments.
-      </Text>
-      <Button
-        onClick={() => {
-          window.location.href = '/confido-legal-demo-scheduler';
-        }}>
-        Schedule a Demo
-      </Button>
+      {!viewDocs && (
+        <Text mb="1rem">
+          Let us help you reduce the cost and improve the client experience associated with accepting payments.
+        </Text>
+      )}
+
+      {viewDocs ? (
+        <Button
+          onClick={() => {
+            window.location.href = '/confido-legal-documentation';
+          }}>
+          View Documentation
+        </Button>
+      ) : (
+        <Button
+          onClick={() => {
+            window.location.href = '/confido-legal-demo-scheduler';
+          }}>
+          Schedule a Demo
+        </Button>
+      )}
     </Flex>
   );
 }
